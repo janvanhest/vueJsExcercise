@@ -13,7 +13,6 @@ const app = Vue.createApp({
       const res = await fetch("https://randomuser.me/api/");
       const { results } = await res.json();
       const { name, email, gender, picture } = results[0];
-      console.log(results);
       this.firstName = name.first;
       this.lastName = name.last;
       this.email = email;
